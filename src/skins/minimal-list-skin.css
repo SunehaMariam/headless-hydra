@@ -1,0 +1,122 @@
+.mls-field {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  font-family: var(--hh-font);
+}
+
+.mls-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--hh-muted);
+  margin-bottom: 6px;
+}
+
+.mls-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--hh-surface);
+  border: 1.5px solid var(--hh-border);
+  border-radius: 12px;
+  padding: 10px 14px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.mls-input-wrap:focus-within {
+  border-color: var(--hh-accent);
+  box-shadow: 0 0 0 4px var(--hh-accent-ring);
+}
+
+.mls-pin {
+  color: var(--hh-muted);
+  flex-shrink: 0;
+}
+
+.mls-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: var(--hh-text);
+}
+
+.mls-input::placeholder {
+  color: var(--hh-muted);
+}
+
+.mls-flag {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.mls-list {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  max-height: 320px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--hh-surface);
+  border: 1px solid var(--hh-border);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14);
+}
+
+.mls-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.mls-option--active {
+  background: var(--hh-accent-soft);
+}
+
+.mls-option-flag {
+  font-size: 18px;
+  width: 22px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.mls-option-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.mls-option-city {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--hh-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mls-option-meta {
+  font-size: 12px;
+  color: var(--hh-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mls-empty {
+  padding: 14px 10px;
+  font-size: 13px;
+  color: var(--hh-muted);
+  text-align: center;
+}

@@ -1,0 +1,124 @@
+.app {
+  min-height: 100%;
+  padding: 48px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header {
+  max-width: 880px;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.app-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hh-accent-strong);
+  background: var(--hh-accent-soft);
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.app-title {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+}
+
+.app-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--hh-muted);
+  margin: 0;
+}
+
+.app-grid {
+  width: 100%;
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 24px;
+}
+
+.demo-card {
+  background: var(--hh-surface);
+  border: 1px solid var(--hh-border);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.demo-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.demo-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.demo-card-desc {
+  font-size: 13.5px;
+  color: var(--hh-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.demo-tag {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.demo-tag--sync {
+  background: #eafaf0;
+  color: #1a8a4c;
+}
+
+.demo-tag--async {
+  background: #fff3e6;
+  color: #b3630a;
+}
+
+.demo-card-body {
+  min-height: 260px;
+  padding-top: 4px;
+}
+
+.app-footer {
+  margin-top: 56px;
+  max-width: 880px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--hh-muted);
+  line-height: 1.7;
+}
+
+.app-footer code {
+  background: var(--hh-accent-soft);
+  color: var(--hh-accent-strong);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 12.5px;
+}

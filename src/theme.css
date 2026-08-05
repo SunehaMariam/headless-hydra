@@ -1,0 +1,30 @@
+:root {
+  --hh-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --hh-bg: #f5f6fb;
+  --hh-surface: #ffffff;
+  --hh-text: #14172b;
+  --hh-muted: #6b7086;
+  --hh-border: #e4e5f0;
+  --hh-accent: #6d5efc;
+  --hh-accent-strong: #4c3ff0;
+  --hh-accent-soft: #efecff;
+  --hh-accent-ring: rgba(109, 94, 252, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--hh-font);
+  background: var(--hh-bg);
+  color: var(--hh-text);
+  -webkit-font-smoothing: antialiased;
+}
