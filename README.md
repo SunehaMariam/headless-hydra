@@ -310,6 +310,8 @@ src/
 - No positioning library (Floating UI, etc.) — the list is positioned with
   plain absolute CSS in both skins, which is fine at the viewport sizes
   demoed here but wouldn't reliably avoid viewport edges/scroll containers
+## Deployed link
+https://headless-hydra-mocha.vercel.app/
   in a general-purpose product. This was a deliberate scope cut to keep
   the headless layer from taking on layout responsibility (see spec §2).
 - Virtualization isn't wired in; both skins simply cap the rendered result
